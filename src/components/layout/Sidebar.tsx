@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useModuleStore } from '@/store/moduleStore'
 import { useAuthStore } from '@/store/authStore'
-import { Plus, Settings, LogOut } from 'lucide-react'
+import { Plus, Settings, LogOut, BarChart3 } from 'lucide-react'
 import { useState } from 'react'
 import CreateModuleModal from '@/components/module/CreateModuleModal'
 import toast from 'react-hot-toast'
@@ -55,6 +55,16 @@ export default function Sidebar() {
         >
           <span>💪</span>
           <span>Body</span>
+        </Link>
+
+        <Link
+          to="/analytics"
+          className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
+            isActive('/analytics') ? 'bg-purple-600/20 text-purple-400' : 'text-dark-300 hover:text-white hover:bg-dark-700'
+          }`}
+        >
+          <BarChart3 className="w-5 h-5" />
+          <span>Analytics</span>
         </Link>
 
         <div className="pt-4 pb-2">

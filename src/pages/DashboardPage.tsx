@@ -6,6 +6,7 @@ import WelcomeWidget from '@/components/dashboard/widgets/WelcomeWidget'
 import LifeScoreWidget from '@/components/dashboard/widgets/LifeScoreWidget'
 import QuickStatsWidget from '@/components/dashboard/widgets/QuickStatsWidget'
 import RecentActivityWidget from '@/components/dashboard/widgets/RecentActivityWidget'
+import GamificationWidget from '@/components/dashboard/widgets/GamificationWidget'
 
 export default function DashboardPage() {
   const user = useAuthStore((s) => s.user)
@@ -31,6 +32,7 @@ export default function DashboardPage() {
         <LifeScoreWidget />
         <QuickStatsWidget />
         <RecentActivityWidget />
+        <GamificationWidget />
       </DashboardGrid>
     </div>
   )

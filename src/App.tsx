@@ -7,6 +7,7 @@ import AuthPage from '@/pages/AuthPage'
 import DashboardPage from '@/pages/DashboardPage'
 import ModulePage from '@/pages/ModulePage'
 import BodyPage from '@/pages/BodyPage'
+import AnalyticsPage from '@/pages/AnalyticsPage'
 import LoadingScreen from '@/components/LoadingScreen'
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <Route path="/" element={<DashboardPage />} />
             <Route path="/module/:id" element={<ModulePage />} />
             <Route path="/body" element={<BodyPage />} />
+            <Route path="/analytics" element={<AnalyticsPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         )}
